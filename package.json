@@ -1,0 +1,51 @@
+{
+  "name": "chessfessor",
+  "version": "1.0.0",
+  "description": "The best app to extract your chess data from Lichess and Chess.com",
+  "main": "dist/chessfessor.js",
+  "scripts": {
+    "coverage": "nyc --reporter=lcov mocha",
+    "test": "mocha",
+    "lint": "jshint src",
+    "watch": "webpack --watch",
+    "build": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FrequentlyMissedDeadlines/Chessfessor.git"
+  },
+  "files": [
+    "README.md",
+    "package.json",
+    "LICENSE",
+    "CHANGELOG.md",
+    "CONTRIBUTING.md",
+    "dist/chessfessor.js"
+  ],
+  "bugs": {
+    "url": "https://github.com/FrequentlyMissedDeadlines/Chessfessor/issues"
+  },
+  "homepage": "https://github.com/FrequentlyMissedDeadlines/Chessfessor",
+  "keywords": [
+    "Chess",
+    "data",
+    "PGN",
+    "JSON"
+  ],
+  "author": "FrequentlyMissedDeadlines",
+  "license": "MIT",
+  "dependencies": {
+    "chess-pgn-parser": "^1.3.9",
+    "command-line-args": "^5.1.3",
+    "command-line-usage": "^6.1.1",
+    "glob": "^7.1.7"
+  },
+  "devDependencies": {
+    "codecov": "^3.8.2",
+    "jshint": "^2.13.0",
+    "mocha": "^9.0.2",
+    "nyc": "^15.1.0",
+    "webpack": "^5.45.0",
+    "webpack-cli": "^4.7.2"
+  }
+}
