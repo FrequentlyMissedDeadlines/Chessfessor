@@ -1,8 +1,11 @@
 {
   "name": "chessfessor",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "The best app to extract your chess data from Lichess and Chess.com",
   "main": "dist/chessfessor.js",
+  "bin": {
+      "greet": "./dist/chessfessor.js"
+  },
   "scripts": {
     "coverage": "nyc --reporter=lcov mocha",
     "test": "mocha",
