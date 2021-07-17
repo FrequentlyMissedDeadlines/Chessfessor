@@ -15,7 +15,7 @@ const optionDefinitions = [
     },
     {
         name: 'casual',
-        description: 'include casual games. By default only rated games are downloaded.',
+        description: 'Include casual games. By default only rated games are downloaded. This option is specific to Lichess.',
         alias: 'c',
         type: Boolean
     },
@@ -52,9 +52,10 @@ const sections = [
     {
         header: 'Example usage',
         content: 'chessfessor -u Kasparov\nchessfessor Kasparov\nchessfessor Kasparov -w lichess'
-      },
+    },
     {
-      content: 'Project home: {underline https://github.com/FrequentlyMissedDeadlines/Chessfessor}'
+        header: 'Support',
+        content: 'Project home: {underline https://github.com/FrequentlyMissedDeadlines/Chessfessor}\nIssues: {underline https://github.com/FrequentlyMissedDeadlines/Chessfessor/issues}'
     }
 ];
 

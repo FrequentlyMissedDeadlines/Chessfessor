@@ -25,8 +25,21 @@ chessfessor Kasparov
 
 ## Advanced usage
 
-```
+```bash
+# Display help page
+chessfessor --help
+chessfessor -h
 
+# Get Lichess.org games for player Kasparov
+chessfessor Kasparov --website lichess
+chessfessor Kasparov -w lichess
+
+# Get Chess.com games for player Kasparov
+chessfessor Kasparov --website chessdotcom
+chessfessor Kasparov -w chessdotcom
+
+#Get Lichess.org games for player Kasparov, including casual games
+chessfessor Kasparov -w lichess --casual
 ```
 
 ## Disclaimer
