@@ -1,6 +1,6 @@
 {
   "name": "chessfessor",
-  "version": "1.5.2",
+  "version": "1.5.3",
   "description": "The best app to extract your chess data from Lichess and Chess.com",
   "main": "dist/chessfessor.js",
   "bin": {
@@ -11,7 +11,7 @@
     "test": "mocha",
     "lint": "jshint src",
     "watch": "webpack --watch",
-    "build": "webpack && chmod +x dist/chessfessor.js"
+    "build": "webpack && chmod +x ./dist/chessfessor.js"
   },
   "repository": {
     "type": "git",
@@ -23,9 +23,7 @@
     "LICENSE",
     "CHANGELOG.md",
     "CONTRIBUTING.md",
-    "dist/chessfessor.js",
-    "src/chessfessor.js",
-    "src/extractor.js"
+    "dist/chessfessor.js"
   ],
   "bugs": {
     "url": "https://github.com/FrequentlyMissedDeadlines/Chessfessor/issues"
