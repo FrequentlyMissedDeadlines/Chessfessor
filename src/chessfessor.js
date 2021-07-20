@@ -1,5 +1,3 @@
-#!/usr/bin/env node
-
 const commandLineUsage = require('command-line-usage');
 const commandLineArgs = require('command-line-args');
 const fs = require('fs');

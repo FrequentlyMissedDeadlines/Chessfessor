@@ -3,6 +3,12 @@ const webpack = require("webpack");
 const path = require("path");
 
 let config = {
+  plugins: [
+    new webpack.BannerPlugin({
+      banner: '#!/usr/bin/env node',
+      raw: true,
+    }),
+  ],
   entry: {
     main: './src/chessfessor.js'
   },
@@ -11,14 +17,8 @@ let config = {
     path: path.resolve(__dirname, './dist'),
     filename: './chessfessor.js'
   },
-  resolve: {
-    fallback: {
-      "os": false,
-      "https": false,
-      "fs": false
-    }
-  },
-
+  
+  target: 'node',
   mode: 'production'
 }
 
